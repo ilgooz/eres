@@ -45,7 +45,7 @@ func (res *Response) Send() {
 }
 
 func (res *Response) WeakSend() bool {
-	if res.HasError() {
+	if !res.HasError() {
 		return false
 	}
 	res.Send()
