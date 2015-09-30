@@ -8,7 +8,7 @@ import (
 
 type Response struct {
 	Message string `json:"message"`
-	Fields  Fields `json:"fields"`
+	Fields  Fields `json:"fields,omitempty"`
 
 	w http.ResponseWriter
 }
